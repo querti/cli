@@ -291,7 +291,7 @@ spec:
         - use
         - $(params.SOURCE_DATA_ARTIFACT)=$(params.TRUSTED_ARTIFACTS_EXTRACT_DIR)
       computeResources: {}
-      image: quay.io/redhat-appstudio/build-trusted-artifacts:e02102ede09aa07187cba066ad547a54724e5cf4
+      image: quay.io/lgallovi-test/build-trusted-artifacts@sha256:23fb8dc09bed249d7d72caab3fc2ce6a014452c4f39d4be32b101c0832549811
       env:
         - name: CA_FILE
           value: /mnt/trusted-ca/ca-bundle.crt
